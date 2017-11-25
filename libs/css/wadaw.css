@@ -52,3 +52,18 @@ button{
 .contentWeb{
 	background-color: white;
 }
+.titleContent{
+	color:#3e49bb;
+	font-weight: bold;
+}
+
+.itemSelect{
+	height: 300px;
+	width: 300px;
+	border:3px solid #95a5a6;
+}
+
+.itemSelect:hover{
+	box-shadow: 5px 5px 5px #95a5a6;
+	cursor:pointer;
+}
