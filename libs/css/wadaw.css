@@ -1,0 +1,43 @@
+body{
+	background: linear-gradient(#bdc3c7,white);
+}
+nav{
+	opacity: 0.90;
+	color: white;
+}
+#brandNav{
+	background: linear-gradient(white, #bdc3c7);
+	border-radius: 5px;
+}
+#brand{
+	height: 60px;
+}
+.active{
+	border-bottom : 5px solid white;
+	font-weight: bold;
+}
+button{
+	cursor: pointer;
+}
+.content{
+	width: 100%;
+
+}
+#headerpict{
+	background-image: url(../../src/img/aerox.jpg);
+	background-repeat: none;
+	background-size: 100%;
+}
+
+.latest{
+	background-color: #303f9f;
+	color:white;
+	padding: 10px 10px;
+}
+#extranav{
+	background-color: #303f9f;
+	color:white;
+}
+.contentWeb{
+	background-color: white;
+}
