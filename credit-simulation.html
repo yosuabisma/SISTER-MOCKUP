@@ -33,10 +33,13 @@
 			width: 50%;
 			color: black;
 		}
+		
+		#form-control{
+			width: 10%;
+		}
 		label { 
 			width: 170px; float: left; margin: 0 20 0 0; 
 		}
-
 		#dp { 
 			width: 175px;
 		}
@@ -65,6 +68,10 @@
 			margin: 0 0 10 60;
 			width:53%;
 			font-size: 150%
+		}
+		
+		.form-control {
+			width:365px;
 		}
 		
 	}
@@ -105,68 +112,63 @@
 			</div>
 		</nav>
 		
-  <div class="jumbotron">
-		<h1>Credit Simulation</h1>      
-		<p>Perhitungan ini hanyalah untuk tujuan simulasi saja, untuk perhitungan yang sesungguhnya silahkan menghubungi dealer Yamaha terdekat.</p>
-		 <br>
-		 <div class="row">
-			<div class="col-md-3">Product</div>
-			<div class="col-md-9"><input type="text"></div>
-			<br>
-			<br>
-			<div class="col-md-3">Harga OTR</div>
-			<div class="col-md-9"><input type="text" ></div>
-			<br>
-			<br>
-			<div class="col-md-3">Down Payment (DP)</div>                                
+		<div class="jumbotron">
+			<h1>CREDIT SIMULATION</h1>      
+			<p>Perhitungan ini hanyalah untuk tujuan simulasi saja, untuk perhitungan yang sesungguhnya silahkan menghubungi dealer Yamaha terdekat.</p>
+			 <br>
+			 <div class="row">
+				<div class="col-md-3">Product</div>
+				<div class="col-md-9"><input type="text" class="form-control" ></div>
+				<br>
+				<br>
+				<div class="col-md-3">Harga OTR</div>
+				<div class="col-md-9"><input type="text" class="form-control"></div>
+				<br>
+				<br>
+				<div class="col-md-3">Down Payment (DP)</div>                                
+					<div class="col-md-9">
+						<label>
+							<input type="text" id="dp" class="form-control"/>
+						</label>
+						<label>
+							<input type="text" id="dp" class="form-control"/>
+						</label>
+					</div>
+				<br>
+				<br>
+				<div class="col-md-3">Tenor</div>
 				<div class="col-md-9">
-					<label>
-						<input type="text" id="dp" />
-					</label>
-					<label>
-						<input type="text" id="dp" />
-					</label>
+					<select name="type" id="tenor" class="form-control">
+						<option value="1">12 Bulan</option>
+						<option value="1">24 Bulan</option>
+						<option value="1">36 Bulan</option>
+					</select>
 				</div>
-			<br>
-			<br>
-			<div class="col-md-3">Tenor</div>
-			<div class="col-md-9">
-				<select name="type" id="tenor">
-		            <option value="1">12 Bulan</option>
-					<option value="1">24 Bulan</option>
-					<option value="1">36 Bulan</option>
-		        </select>
+				<br>
+				<br>
+				<div class="col-md-3"></div>
+				<div class="col-md-9">	
+					<button type="button" class="btn btn-success"  onclick="myFunction()">Hitung</button>
+				</div>
 			</div>
-			<br>
-			<br>
-			<div class="col-md-3"></div>
-			<div class="col-md-9">	
-				<button type="button" class="btn btn-success"  onclick="myFunction()">Hitung</button>
+			<div id="angsur">
+				<center>Biaya Angsuran perbulan</center>                
 			</div>
-		</div>
-		<div id="angsur">
-			<center>Biaya Angsuran perbulan</center>                
-        </div>
-		<div id="hasil">
-            <br>
-			<input type="text" id="myText" value="">
-			<br>
-			<center><button type="button" class="btn btn-primary"  onclick="location.href='dealers.html'">Find Dealer</button></center>
-			<br>
-        </div>
-	</div>     
-	<script>
-		function myFunction() {
-			document.getElementById("myText").value = "Rp.3.200.000";
-		}
-		</script>
-		
-	<img src="src/img/footer.jpg" class="content"/>
-		
+			<div id="hasil">
+				<br>
+				<input type="text" id="myText" value="">
+				<br>
+				<center><button type="button" class="btn btn-primary"  onclick="location.href='dealers.html'">Find Dealer</button></center>
+				<br>
+			</div>
+		</div>     
 		<script>
 			function myFunction() {
-			document.getElementById("").value = """;
-		}
-	</script>
+				document.getElementById("myText").value = "Rp.3.200.000";
+			}
+		</script>
+		
+		<img src="src/img/footer.jpg" class="content"/>
+	
 	</body>
 </html>
