@@ -67,3 +67,14 @@ button{
 	box-shadow: 5px 5px 5px #95a5a6;
 	cursor:pointer;
 }
+#yamahanews{
+	background-image: url(../../src/img/newsback.jpg);
+	background-repeat: none;
+	background-size: 100%;
+	background-color: black;
+}
+
+#newsContent:hover{
+	box-shadow: 15px 15px 55px #34495e;
+	cursor: pointer;
+}
