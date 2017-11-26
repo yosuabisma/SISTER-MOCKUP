@@ -1,0 +1,41 @@
+.dua {
+    padding-left: 50px; 
+}
+
+.tiga {
+    padding-left: 70px; 
+}
+
+.empat {
+    padding-left: 100px;
+}
+
+.enam {
+    padding-left: 50px;
+}
+
+.tujuh {
+    padding-left: 80px;
+}
+
+.delapan {
+    padding-left: 100px;
+}
+
+.gambar2, .gambar3, .gambar4, .gambar5, .gambar6, .gambar7, .gambar8{
+    height: 280px;
+    width: 300px;
+}
+
+.text {
+    color: white;
+}
+
+.yamaha {
+    color: red;
+}
+
+.banner-item {
+    height: 30%;
+    width: auto;
+}
