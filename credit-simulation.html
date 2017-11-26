@@ -6,6 +6,69 @@
 		<link rel="stylesheet" type="text/css" href="libs/css/wadaw.css">
 		<script src="libs/jquery/dist/jquery.min.js"></script>
 		<script src="libs/bootstrap//dist/js/bootstrap.min.js"></script>
+		<style>
+		h1 {
+			color: red;
+			text-align: center;
+		}
+		p{
+			color:white;
+			text-align: center;
+		}
+		.jumbotron{
+			background-image: url("src/img/credit.jpg");
+			background-color: black;
+			background-size: 1400px 900px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.row{
+			padding-left: 300px;	
+		}
+		.col-md-3{
+			color: blue;
+		}
+		
+		input{
+			width: 50%;
+			color: black;
+		}
+		label { 
+			width: 170px; float: left; margin: 0 20 0 0; 
+		}
+
+		#dp { 
+			width: 175px;
+		}
+		
+		#tenor{
+			width:50%;
+		}
+		
+		#angsur{
+			background-color: grey;
+			width:20%;	
+			margin: 30 0 10 500;
+			color: white;
+		}
+		#hasil{
+			background-color: white;
+			width:20%;	
+			margin: -10 0 0 500;
+			color: white;
+		}
+		
+		#myText{
+			border: none;
+			border-color: transparent;
+			color: blue;
+			margin: 0 0 10 60;
+			width:53%;
+			font-size: 150%
+		}
+		
+	}
+	</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -41,7 +104,73 @@
 				</form>
 			</div>
 		</nav>
-		<br/>
-		<img src="src/img/footer.jpg" class="content"/>
+		
+  <div class="jumbotron">
+		<h1>Credit Simulation</h1>      
+		<p>Perhitungan ini hanyalah untuk tujuan simulasi saja, untuk perhitungan yang sesungguhnya silahkan menghubungi dealer Yamaha terdekat.</p>
+		 <br>
+		 <div class="row">
+			<div class="col-md-3">Product</div>
+			<div class="col-md-9"><input type="text"></div>
+			<br>
+			<br>
+			<div class="col-md-3">Harga OTR</div>
+			<div class="col-md-9"><input type="text" ></div>
+			<br>
+			<br>
+			<div class="col-md-3">Down Payment (DP)</div>                                
+				<div class="col-md-9">
+					<label>
+						<input type="text" id="dp" />
+					</label>
+					<label>
+						<input type="text" id="dp" />
+					</label>
+				</div>
+			<br>
+			<br>
+			<div class="col-md-3">Tenor</div>
+			<div class="col-md-9">
+				<select name="type" id="tenor">
+		            <option value="1">12 Bulan</option>
+					<option value="1">24 Bulan</option>
+					<option value="1">36 Bulan</option>
+		        </select>
+			</div>
+			<br>
+			<br>
+			<div class="col-md-3"></div>
+			<div class="col-md-9">	
+				<button type="button" class="btn btn-success"  onclick="myFunction()">Hitung</button>
+			</div>
+		</div>
+		<div id="angsur">
+			<center>Biaya Angsuran perbulan</center>                
+        </div>
+		<div id="hasil">
+            <br>
+			<input type="text" id="myText" value="">
+			<br>
+			<center><button type="button" class="btn btn-primary"  onclick="location.href='dealers.html'">Find Dealer</button></center>
+			<br>
+        </div>
+
+		
+	</div>     
+
+
+<script>
+function myFunction() {
+    document.getElementById("myText").value = "Rp.3.200.000";
+}
+</script>
+		
+	<img src="src/img/footer.jpg" class="content"/>
+		
+		<script>
+			function myFunction() {
+			document.getElementById("").value = """;
+		}
+	</script>
 	</body>
 </html><br/><br/>
