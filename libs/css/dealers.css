@@ -8,9 +8,6 @@ h1{
 h3{
 	color:red;
 }
-label{
-	color:white;
-}
 .container{
 	margin-top:0px;
 }
@@ -22,7 +19,7 @@ label{
     margin: 0;
 }
 #filterBox{
-	background-color:0f0f0a;
+	background-color:#e6eeff;
     width: 100%;
     padding: 10px;
     border: 5px;
