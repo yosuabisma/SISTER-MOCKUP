@@ -5,10 +5,12 @@
 		<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="libs/css/wadaw.css">
 		<link rel="stylesheet" type="text/css" href="libs/css/footer.css">
-		<script src="libs/bootstrap//dist/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="libs/js/jquery.min.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+		<nav class="navbar fixed-top navbar-expand-lg navbar-custom">
 			<a class="navbar-brand" id="brandNav" href="index.html"><img id="brand" src="src/img/yamahabrand.png" /></a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
@@ -35,206 +37,344 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<a href="search.html"role="button" class="btn btn-danger my-2 my-sm-0" id="logoutbtn">
+					<a href="search.html"role="button" class="btn btn-outline-danger my-2 my-sm-0" id="logoutbtn">
 						 Search
 					</a>
 				</form>
 			</div>
 		</nav>
-		<img src="src/img/aerox.jpg" class="content"/>
-		<br/>
-		<br/>
-		<center>
-			<img class="iklanmain" src="src/img/iklan.png"/>
-		</center>
-		<br/>
-		<br/>
-		<!--UPDATE VERSION-->
-		<div class="latest">
-			<center>
-			<h3>NEWS</h3>
-			</center>
+		<div id="newEra">
+				<div class="row">
+					<div class="col-sm-6">
+						<center>
+						<br/><br/><br/><br/><br/><br/><br/><br/>
+						<img id="fontsemakin" src="src/img/semakin.png" />
+						<h1 class="greet">Hi, Good Morning !</h1>
+						</center>
+					</div>
+					
+					<div class="col-sm-6">
+
+					</div>
+				</div>
+				
+				<br/>
+		</div>
+		<div class="menuOn">
+			<div class="container">
+				<center>
+				<div class="row">
+					<div class="col-sm-3 oke" id="box">
+						<a id="dealerClick">
+						<img src="src/img/icondealerpng.png" style="height:50px"/>
+						<br/>
+						<h6 class="myenu"><b>FIND DEALER</b></h6>
+						<h6>Find Yamaha Dealer all arround Indonesia</h6>
+						</a>
+					</div>
+					<div class="col-sm-3 oke" id="box">
+						<a id="partsClick">
+						<img src="src/img/gear.png" style="height:50px"/>
+						<br/>
+						<h6 class="myenu"><b>PARTS & ACCESORIES</b></h6>
+						<h6>Find Parts and Accesories</h6>
+						</a>
+					</div>
+					<div class="col-sm-3 oke" id="box">
+						<a id="newsClick">
+						<img src="src/img/newsicon.png" style="height:50px"/>
+						<br/>
+						<h6 class="myenu"><b>LATEST NEWS</b></h6>
+						<h6>See The Latest News from Yamaha</h6>
+						</a>
+					</div>
+					<div class="col-sm-3 oke" id="box">
+						<a id="forumClick">
+						<img src="src/img/forumicon.png" style="height:50px"/>
+						<br/>
+						<h6 class="myenu"><b>LATEST FORUM</b></h6>
+						<h6>See The Latest Forum from Yamaha</h6>
+						</a>
+					</div>
+				</div>
+				</center>
+				<br/>
+			</div>
+			<hr/>
+			<br/>
+			
+			<div id="contentDealer">
+				<div class="container">
+					<h3 style="color:black;"><b>DEALERS AND SERVICES</b></h3>	
+					<br/>
+					<form class="form-dealer">
+						<div class="row">
+						<section class="col-md-12">
+							<div class="form-group">
+								<label for="search-dealerServices" class="sr-only">Type a City name, Store name and other</label>
+								<input id="search-dealerServices" class="form-control search-dealerServices search" type="text" placeholder="Type a City name, Store name and other" data-search="">
+								<br/>
+								<a href="#" role="button" class="btn btn-outline-primary my-2 my-sm-0" id="dealerbtn">Search</a>
+								<center><a href="dealers.html" role="button" class="btn btn-outline-default my-2 my-sm-0" id="dealerbtn">Advance Search</a></center>
+								
+							</div>
+						</section>
+						</div>
+						<br/>
+					</form>
+				</div>
+
+				<div class="container" id="dealerResult">
+					<h4 class="titleContent">Results</h4>
+					<hr/>
+					<section id="dealerBox" class="dealerServices-box-body" data-category="FI Ready" data-title="FI Ready">
+						<input type="hidden" name="latitude" id="latitude_1" value="-6.2251666667">
+						<input type="hidden" name="longitude" id="longitude_1" value="107.1604666667">
+						<h4 class="dealerServices-city">KAB. BEKASI</h4>
+						<h3 class="dealerServices-name">ERAMOTOR SUKATANI</h3>
+						<address class="dealerServices-address">
+							KP. WARUNG POJOK NO.52 RT.005 / 006 DS.SUKARAYA KEC.KARANG BAHAGIA <br>
+							<a href="tel:02189106739" style="font-weight: bold;"><span class="glyphicon glyphicon-earphone"></span>02189106739</a><br>
+						</address>
+						<button id="viewLoc" class="btn btn-map" ><a href="#"><span class="glyphicon glyphicon-map-marker"></span> View Location</a></button>
+						<br><br>
+						<img src="src/img/map.png" id="dealermap"/>
+						<br/><br/>
+					</section>
+				</div>	
+			</div>
+			<div id="contentParts">
+				<div class="container">
+					<h3 style="color:black;"><b>PARTS AND ACCESORIES</b></h3>	
+					<br/>
+					<form class="form-dealer">
+						<div class="row">
+						<section class="col-md-12">
+							<div class="form-group">
+								<label for="search-partsServices" class="sr-only">Type a Parts or Accesories name</label>
+								<input id="search-partsServices" class="form-control search-partsServices search" type="text" placeholder="Type a City name, Store name and other" data-search="">
+								<br/>
+								<a href="#" role="button" class="btn btn-outline-primary my-2 my-sm-0" id="partsbtn">Search</a>
+								<center><a href="parts-and-accesories.html" role="button" class="btn btn-outline-default my-2 my-sm-0" id="dealerbtn">Advance Search</a></center>
+								
+							</div>
+						</section>
+						</div>
+						<br/>
+					</form>
+				</div>
+				<div class="container" id="partsResult">
+					<h4 class="titleContent">Not Found Results</h4>
+					<br/>
+					<br/>
+					<br/>
+				</div>
+			</div>
+			<div id="contentNews">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<img src="src/img/7.jpg"/>
+							
+						</div>
+						<div class="col-sm-6">
+							<h5 style="color:red"><b>PRESS RELEASE</b></h5>
+							<h3 style="color:black"><b>YAMAHA LUNCURKAN YZF-R25...</b></h3>
+							<h6>23 November 2017</h6>
+							<hr/>
+							<p>Yamaha kembali memperbarui warna dan grafis YZF-R25 ABS dan Non ABS. Penyegaran baru ini tampil deng...</p>
+							<a href="news1.html"role="button" class="btn btn-outline-danger my-2 my-sm-0">
+						 More Details
+					</a>
+						</div>
+					</div>
+					<center><a href="news.html" role="button" class="btn btn-outline-default my-2 my-sm-0" id="dealerbtn">More News</a></center>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+			<div id="contentForum">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<img src="src/img/helmfullcover.jpg" style="height:180px;"/>
+						</div>
+						<div class="col-sm-6">
+							<br/>
+							<h3><b>VALENTINO ROSSI DAN YAMAHA</b></h3>
+							<h6 class="bg-success" style="color:white;padding:10px 20px;"><center>Trending</center></h6>
+							
+							<h5>31,199 Likes - 10,155 Comments</h5>
+							<span><a href="#"role="button" class="btn btn-outline-danger my-2 my-sm-0">
+						 Like
+					</a></span> <a href="forum.html" role="button" class="btn btn-outline-primary my-2 my-sm-0">
+						 Comments
+					</a>
+							<h6>Yamaha Motor Manufacturing Indonesia, Dipublikasikan : 22 Desember 2017</h6>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<br/><br/>
+			</div>
 		</div>
 		
-		<div class="row" id="yamahanews">
-			<div class="col-sm-6">
-				<a href="news.html"><img src="src/img/indexnews00.jpg" class="content" id="newsContent"/></a>
-				<a href="news.html"><img src="src/img/indexnews01.jpg" class="content" id="newsContent"/></a>
+		<hr/>
+		<br/><br/>
+		<center>
+			<img class="iklanmain" src="src/img/iklanNew.jpg"/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		</center>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="src/img/yamahavid.jpg"/>
+				</div>
+				<div class="col-sm-6">
+					<img src="src/img/blucore.jpg"/>
+				</div>
 			</div>
-			<div class="col-sm-6"></div>
 		</div>
+		<br/>
+		<br/>
 		<div class="latest">
 			<center>
-			<h3>FORUM</h3>
+			<h3>F O R U M</h3>
 			</center>
 		</div>
-
 		<div class="forum">
 			<br/><br/><br/>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
-						<a href="forum.html"><div class="forumTitle">
-							<br/>
-							<center>
-							<h3>Yamaha R15 V3</h3>
-							<br/>
-							<h6>3,699 likes - 9,696 comments</h6>
-							</center>
-						</div></a>
-						<br/><br/>
-						<a href="forum.html"><div class="forumTitle">
-							<br/>
-							<center>
-							<h3>Valentino Rossi dan Yamaha</h3>
-							<br/>
-							<h6>31,199 likes - 10,155 comments</h6>
-							</center>
-						</div></a>
+					<div class="col-sm-4">
+						<div class="forumTitle">
+							<h3><b>VALENTINO ROS...</b></h3>
+							<h5>31,199 Likes - 10,155 Comments</h5>
 
+							<a href="forum.html" role="button" class="btn btn-outline-primary my-2 my-sm-0">
+						 View Details
+					</a>
+						</div>
 					</div>
-					<div class="col-sm-6">
-						<a href="forum.html"><div class="forumTitle">
-							<br/>
-							<center>
-							<h3>Yamaha R25</h3>
-							<br/>
-							<h6>1,629 likes - 3,124 comments</h6>
-							</center>
-						</div></a>
-						<br/><br/>
-						<a href="forum.html"><div class="forumTitle">
-							<br/>
-							<center>
-							<h3>Yamaha Indonesia</h3>
-							<br/>
-							<h6>899 likes - 1,057 comments</h6>
-							</center>
-						</div></a>
+					<div class="col-sm-4">
+						<div class="forumTitle">
+							<h3><b>YAMAHA R15 V3</b></h3>
+							<h5>21,175 Likes - 8,201 Comments</h5>
+
+							<a href="forum.html" role="button" class="btn btn-outline-primary my-2 my-sm-0">
+						 View Details
+					</a>
+						</div>
+						
 					</div>
+					<div class="col-sm-4">
+						<div class="forumTitle">
+							<h3><b>YAMAHA R25 FACEL...</b></h3>
+							<h5>3,289 Likes - 1,125 Comments</h5>
+							<a href="forum.html" role="button" class="btn btn-outline-primary my-2 my-sm-0">View Details
+							</a>
+						</div>
+					</div>
+
 				</div>
+				<br/><br/><br/><br/><br/>
+						<center>
+						<a href="#" role="button" class="btn btn-outline-primary my-2 my-sm-0 bg-dark">Load More
+							</a></center>
 			</div>
 			<br/><br/><br/>
 		</div>
-	</body>
-	<footer>
-	    <div>
-		<div id="box">
+		
+		<!--FOOTER BEGIN-->
+		<div class="footer" style="background-color: white;">
+			<br/>
+			<center>
+				<img src="src/img/fbicon.png" style="height:30px"/> <img src="src/img/twiticon.png" style="height:30px"/> <img src="src/img/igicon.png" style="height:30px"/>
+			</center>
+			<br/>
 			<div class="container">
-                <table class="table">
-                    <thead>
-						<tr>
-							<th><a href="products.html"><h4>Products</h4></a></th>
-							<th><a href="parts-and-accesories.html"><h4>Parts &amp; Accessories</h4></a></th>
-							<th><a href="dealers.html"><h4>Dealer &amp; Services</h4></a></th>
-							<th><a href="news.html"><h4>News &amp; Articles</h4></a></th>
-							<th><a href="other.html"><h4>Others</h4></a></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="products-at-matic.html" class="top-option"><span>MATIC</span></a></td>
-							<td><a href="parts-and-accesories-ygp.html" class="top-option"><span>YGP</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-aboutus.html">About Us</a></td>
-						</tr>
-						<tr>
-							<td><a href="products-at-maxi.html" class="top-option"><span>MAXI YAMAHA</span></a></td>
-							<td><a href="parts-and-accesories-helmet.html" class="top-option"><span>HELMET</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-contact.html">Contact</a></td>
-						</tr>
-						<tr>
-							<td><a href="products-mt-naked.html" class="top-option"><span>NAKED BIKE</span></a></td>
-							<td><a href="parts-and-accesories-apparel.html" class="top-option"><span>APPAREL</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-career.html"><span>Career</span></a></td>
-						</tr>	
-						<tr>
-							<td><a href="products-mt-sport.html" class="top-option"><span>SPORT</span></a></td>
-							<td><a href="parts-and-accesories-acc.html" class="top-option"><span>ACCESSORIES</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-investor.html"><span>Investor</span></a></td>
-						</tr>	
-						<tr>
-							<td><a href="products-yamaha.html" class="top-option"><span>YAMAHA MOVISTAR LIVERY</span></a></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td><a href="products-mt-moped.html" class="top-option"><span>MOPED</span></a></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>							
-						<tr>
-							<td><a href="products-cbu.html" class="top-option"><span>CBU</span></a></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>							
-						<tr>
-							<td><a href="products-atv.html" class="top-option"><span>ATV</span></a><td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>							
-					</tbody>
-                </table>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="products.html"><h6 class="footerSelect0" style="color:red" ><b>PRODUCTS</b></h6></a><hr/>
+						<a href="products-at.html"><h6 style="color:black" class="footerSelect">Automatic Transmission</h6></a>
+						<a href="products-mt.html"><h6 style="color:black" class="footerSelect">Manual Transmission</h6></a>
+						<a href="products-yamaha.html"><h6 style="color:black" class="footerSelect">Yamaha Movistar Livery</h6></a>
+						<a href="products-atv.html"><h6 style="color:black" class="footerSelect">ATV</h6></a>
+						<a href="products-cbu.html"><h6 style="color:black" class="footerSelect">CBU</h6></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="parts-and-accesories.html"><h6 style="color:red" class="footerSelect0"><b>PARTS AND ACCESORIES</b></h6></a><hr/>
+						<a href="parts-and-accesories-ygp.html"><h6 style="color:black" class="footerSelect">YGP</h6></a>
+						<a href="parts-and-accesories-helmet.html"><h6 style="color:black" class="footerSelect">Helmet</h6></a>
+						<a href="parts-and-accesories-apparel.html"><h6 style="color:black" class="footerSelect">Apparel</h6></a>
+						<a href="parts-and-accesories-acc.html"><h6 style="color:black" class="footerSelect">Accesories</h6></a>
+						<br/>
+						<a href="dealers.html"><h6 style="color:red" class="footerSelect0"><b>DEALERS AND SERVICES</b></h6></a><hr/>
+						<a href="dealers.html"><h6 style="color:black" class="footerSelect">Find Dealers and Services</h6></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="news.html"><h6 style="color:red" class="footerSelect0"><b>NEWS AND ARTICLES</b></h6></a><hr/>
+						<a href="news.html"><h6 style="color:black" class="footerSelect">Read News and Articles</h6></a>
+						<br/>
+						<a href="other.html"><h6 style="color:red" class="footerSelect0"><b>OTHERS</b></h6></a><hr/>
+						<a href="other-aboutus.html"><h6 style="color:black" class="footerSelect">About Us</h6></a>
+						<a href="other-contact.html"><h6 style="color:black" class="footerSelect">Contact</h6></a>
+						<a href="other-career.html"><h6 style="color:black" class="footerSelect">Career</h6></a>
+						<a href="other-investor.html"><h6 style="color:black" class="footerSelect">Investor</h6></a>
+					</div>
+					<div class="col-sm-3">
+						<img src="src/img/yamahafooter.jpg"/>
+					</div>
+				</div>
 			</div>
+			<br/><br/>
 		</div>
-		<div class="container row">
-			<div id="alamat">
-                <div class="col-md-12">
-                        <div>
-                            <address>
-                                <h3>Yamaha Indonesia Motor Manufacturing</h3>
-                                <p>
-                                    Jl. DR. KRT. Rajiman Widyodiningrat<br>
-                                    (Jl. Raya Bekasi Km 23) Pulo Gadung<br>
-                                    Jakarta 13920, Indonesia
-                                </p>
-                            </address>
-                            <section class="footer-contact">
-                                <div class="yamaha-contact">
-                                    <div class="contact-top">
-                                        <div class="contact-left">
-                                            Yamaha Contact Center
-                                        </div>
-                                        <div class="contact-right">
-                                            <div class="main-contact">											
-                                                <div class="contact-number">
-                                                    <a href="tel:62-021-2457-5555">021 2457 5555</a><br>
-                                                    <a href="tel:62-021-461-8000">021 461 8000</a>
-                                                </div>
-                                                <div class="right-bottom">
-													<a href="tel:62-8111080090">
-													 08111080090
-													</a>
-													<br>
-													<a href="tel:62-021-461-6995">
-													0214616995
-													</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <a href="#" class="bottom-email">contact_center@yamaha-motor.co.id</a>
-                                </div>
-                            </section>
-                        </div>
-                </div>
-            </div>
-		</div>
-	</footer>
+		<!--FOOTER END-->
+		<script>
+			$( document ).ready(function(){
+				//$('#fontsemakin').delay(5000).fadeIn(); 
+				$("#fontsemakin").hide();
+				$("#contentDealer").hide();
+				$("#contentNews").hide();
+				$("#contentParts").hide();
+				$("#contentForum").hide();
+				$("#dealerResult").hide();
+				$("#dealermap").hide();
+				$("#dealerClick").click(function(){
+					$("#contentDealer").toggle();	
+					$("#dealerResult").hide();	
+					$("#dealermap").hide();		
+				});
+				$("#dealerbtn").click(function(){
+					$("#dealerResult").show();				
+				});
+				$("#viewLoc").click(function(){
+					$("#dealermap").show();				
+				});
+				$("#newsClick").click(function(){
+					$("#contentNews").toggle();	
+				});
+				$("#forumClick").click(function(){
+					$("#contentForum").toggle();	
+				});
+				$("#partsClick").click(function(){
+					$("#contentParts").toggle();
+					$("#partsResult").hide();
+				});
+				$("#partsbtn").click(function(){
+					$("#partsResult").show();
+				});
+				$(".greet").hide();
+				setTimeout(function(){
+				    $("#fontsemakin").fadeIn(3000);
+				}, 3000);
+				setTimeout(function(){
+				    $(".greet").fadeIn(2000);
+				}, 4000);
+	        });
+		</script>
 </html>

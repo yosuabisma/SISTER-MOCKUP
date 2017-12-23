@@ -1,9 +1,124 @@
 body{
+	background: linear-gradient(white,white,white,#bdc3c7);
+	
+}
+nav{
+	background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+	box-shadow: 15px 15px 55px #34495e;
+	overflow: hidden;
+}
+.extNav{
+	padding: 10px 15px;
+	color:white;
+}
+.extNav:hover{
+	color:red;
+	cursor:pointer;
+}
+.extNavDet{
+	color:gray;
+	padding: 15px 15px;
+}
+.extNavDet:hover{
+	color:white;
+	cursor:pointer;
+}
+.navbar-custom .nav-item .nav-link {
+   	padding-bottom: 15px;
+   	margin-left: 20px;
+   	color: #93a1a1;
+   	font-weight: bold;
+}
+.navbar-custom .nav-item:hover .nav-link {
+    color: black;
+}
+#brand{
+	height: 50px;
+}
+.content{
+	width: 100%;
+}
+.navbar-custom .nav-item.active .nav-link{
+	font-weight: bold;
+	border-bottom:3px solid black;
+	color:black;
+}
+#newEra{
+	background-image: url(../../src/img/img-yamaha.jpg);
+	background-repeat: none;
+	background-size: 100%;
+	height:550px;
+	overflow: hidden;
+}
+#fontsemakin{
+	height: 300px;
+}
+.iklanmain{
+	box-shadow: 15px 15px 55px #34495e;
+	border:10px solid white;
+}
+
+.menuOn{
+	background: linear-gradient(white,white,white,#bdc3c7);
+	color:#34495e;
+}
+#box{
+	box-shadow: 1px 0px 3px #95a5a6;
+	cursor:pointer;
+	text-decoration: none;
+}
+#box:hover{
+	background: linear-gradient(white,#bdc3c7);
+	box-shadow: 5px 5px 10px #95a5a6;
+}
+a{
+	text-decoration: none !important;
+}
+.latest{
+	background-color: #000080;
+	color:white;
+	padding: 10px 10px;
+}
+
+.forum{
+	background-image: url(../../src/img/forumwall.jpg);
+	background-color: black;
+	background-repeat: none;
+	background-size: 100%;
+	overflow: hidden;
+}
+
+.forumTitle{
+	background: linear-gradient(to left, rgba(255,255,255,0.9), rgba(255,255,255,1));
+	padding: 20px 20px;
+}
+.forumTitle:hover{
+	cursor:pointer;
+	color:blue;
+}
+.footerSelect0:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+.footerSelect:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+.itemSelect{
+	height: 300px;
+	width: 300px;
+	border:3px solid #95a5a6;
+}
+
+.itemSelect:hover{
+	box-shadow: 5px 5px 5px #95a5a6;
+	cursor:pointer;
+}
+/*body{
 	background: linear-gradient(#bdc3c7,white);
 }
 nav{
 	opacity: 0.90;
-	color: white;
 	box-shadow: 15px 15px 55px #34495e;
 }
 ul{
@@ -78,21 +193,7 @@ button{
 	box-shadow: 15px 15px 55px #34495e;
 	cursor: pointer;
 }
-.forum{
-	background-image: url(../../src/img/helmfullcover.jpg);
-	background-repeat: none;
-	background-size: 100%;
-}
 
-.forumTitle{
-	background-color: white;
-	padding: 10px 10px;
-}
-.forumTitle:hover{
-	background-color: white;
-	box-shadow: 5px 5px 5px #95a5a6;
-	cursor:pointer;
-}
 
 a:hover{
 	text-decoration: none;
@@ -110,4 +211,4 @@ a:hover{
     width: 100%;
     padding: 50px;
     border: 5px;
-}
+}*/

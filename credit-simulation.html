@@ -81,15 +81,15 @@
 	</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-custom">
 			<a class="navbar-brand" id="brandNav" href="index.html"><img id="brand" src="src/img/yamahabrand.png" /></a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="products.html">PRODUCTS</a>
+						<a class="nav-link" href="products.html" >PRODUCTS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="parts-and-accesories.html">PARTS AND ACCESORIES</a>
+						<a class="nav-link" href="parts-and-accesories.html" id="selectedNavbar">PARTS AND ACCESORIES</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link" href="credit-simulation.html">CREDIT SIMULATION</a>
@@ -108,13 +108,13 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-					<a href="search.html"role="button" class="btn btn-danger my-2 my-sm-0" id="logoutbtn">
+					<a href="search.html"role="button" class="btn btn-outline-danger my-2 my-sm-0" id="logoutbtn">
 						 Search
 					</a>
 				</form>
 			</div>
 		</nav>
-		
+		<br/><br/>
 		<div class="jumbotron">
 			<h1>CREDIT SIMULATION</h1>      
 			<h2>Perhitungan ini hanyalah untuk tujuan simulasi saja, untuk perhitungan yang sesungguhnya silahkan menghubungi dealer Yamaha terdekat.</h2>
@@ -164,133 +164,57 @@
 				<center><button type="button" class="btn btn-primary"  onclick="location.href='dealers.html'">Find Dealer</button></center>
 				<br>
 			</div>
-		</div>     
+		</div> 
+		<br/>  
+		<!--FOOTER BEGIN-->
+		<div class="footer" style="background-color: white;">
+			<br/>
+			<center>
+				<img src="src/img/fbicon.png" style="height:30px"/> <img src="src/img/twiticon.png" style="height:30px"/> <img src="src/img/igicon.png" style="height:30px"/>
+			</center>
+			<br/>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="products.html"><h6 class="footerSelect0" style="color:red" ><b>PRODUCTS</b></h6></a><hr/>
+						<a href="products-at.html"><h6 style="color:black" class="footerSelect">Automatic Transmission</h6></a>
+						<a href="products-mt.html"><h6 style="color:black" class="footerSelect">Manual Transmission</h6></a>
+						<a href="products-yamaha.html"><h6 style="color:black" class="footerSelect">Yamaha Movistar Livery</h6></a>
+						<a href="products-atv.html"><h6 style="color:black" class="footerSelect">ATV</h6></a>
+						<a href="products-cbu.html"><h6 style="color:black" class="footerSelect">CBU</h6></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="parts-and-accesories.html"><h6 style="color:red" class="footerSelect0"><b>PARTS AND ACCESORIES</b></h6></a><hr/>
+						<a href="parts-and-accesories-ygp.html"><h6 style="color:black" class="footerSelect">YGP</h6></a>
+						<a href="parts-and-accesories-helmet.html"><h6 style="color:black" class="footerSelect">Helmet</h6></a>
+						<a href="parts-and-accesories-apparel.html"><h6 style="color:black" class="footerSelect">Apparel</h6></a>
+						<a href="parts-and-accesories-acc.html"><h6 style="color:black" class="footerSelect">Accesories</h6></a>
+						<br/>
+						<a href="dealers.html"><h6 style="color:red" class="footerSelect0"><b>DEALERS AND SERVICES</b></h6></a><hr/>
+						<a href="dealers.html"><h6 style="color:black" class="footerSelect">Find Dealers and Services</h6></a>
+					</div>
+					<div class="col-sm-3">
+						<a href="news.html"><h6 style="color:red" class="footerSelect0"><b>NEWS AND ARTICLES</b></h6></a><hr/>
+						<a href="news.html"><h6 style="color:black" class="footerSelect">Read News and Articles</h6></a>
+						<br/>
+						<a href="other.html"><h6 style="color:red" class="footerSelect0"><b>OTHERS</b></h6></a><hr/>
+						<a href="other-aboutus.html"><h6 style="color:black" class="footerSelect">About Us</h6></a>
+						<a href="other-contact.html"><h6 style="color:black" class="footerSelect">Contact</h6></a>
+						<a href="other-career.html"><h6 style="color:black" class="footerSelect">Career</h6></a>
+						<a href="other-investor.html"><h6 style="color:black" class="footerSelect">Investor</h6></a>
+					</div>
+					<div class="col-sm-3">
+						<img src="src/img/yamahafooter.jpg"/>
+					</div>
+				</div>
+			</div>
+			<br/><br/>
+		</div>
+		<!--FOOTER END-->
 		<script>
 			function myFunction() {
 				document.getElementById("myText").value = "Rp.3.200.000";
 			}
 		</script>
-		
-		<footer>
-    <div>
-		<div id="box">
-			<div class="container">
-                <table class="table">
-                    <thead>
-						<tr>
-							<th><a href="products.html"><h4>Products</h4></a></th>
-							<th><a href="parts-and-accesories.html"><h4>Parts &amp; Accessories</h4></a></th>
-							<th><a href="dealers.html"><h4>Dealer &amp; Services</h4></a></th>
-							<th><a href="news.html"><h4>News &amp; Articles</h4></a></th>
-							<th><a href="other.html"><h4>Others</h4></a></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="products-at-matic.html" class="top-option"><span>MATIC</span></a></td>
-							<td><a href="parts-and-accesories-ygp.html" class="top-option"><span>YGP</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-aboutus.html">About Us</a></td>
-						</tr>
-						<tr>
-							<td><a href="products-at-maxi.html" class="top-option"><span>MAXI YAMAHA</span></a></td>
-							<td><a href="parts-and-accesories-helmet.html" class="top-option"><span>HELMET</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-contact.html">Contact</a></td>
-						</tr>
-						<tr>
-							<td><a href="products-mt-naked.html" class="top-option"><span>NAKED BIKE</span></a></td>
-							<td><a href="parts-and-accesories-apparel.html" class="top-option"><span>APPAREL</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-career.html"><span>Career</span></a></td>
-						</tr>	
-						<tr>
-							<td><a href="products-mt-sport.html" class="top-option"><span>SPORT</span></a></td>
-							<td><a href="parts-and-accesories-acc.html" class="top-option"><span>ACCESSORIES</span></a></td>
-							<td></td>
-							<td></td>
-							<td><a href="other-investor.html"><span>Investor</span></a></td>
-						</tr>	
-						<tr>
-							<td><a href="products-yamaha.html" class="top-option"><span>YAMAHA MOVISTAR LIVERY</span></a></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td><a href="products-mt-moped.html" class="top-option"><span>MOPED</span></a></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>							
-						<tr>
-							<td><a href="products-cbu.html" class="top-option"><span>CBU</span></a></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>							
-						<tr>
-							<td><a href="products-atv.html" class="top-option"><span>ATV</span></a><td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>							
-					</tbody>
-                </table>
-			</div>
-		</div>
-		<div class="container row">
-			<div id="alamat">
-                <div class="col-md-12">
-                        <div>
-                            <address>
-                                <h3>Yamaha Indonesia Motor Manufacturing</h3>
-                                <p>
-                                    Jl. DR. KRT. Rajiman Widyodiningrat<br>
-                                    (Jl. Raya Bekasi Km 23) Pulo Gadung<br>
-                                    Jakarta 13920, Indonesia
-                                </p>
-                            </address>
-                            <section class="footer-contact">
-                                <div class="yamaha-contact">
-                                    <div class="contact-top">
-                                        <div class="contact-left">
-                                            Yamaha Contact Center
-                                        </div>
-                                        <div class="contact-right">
-                                            <div class="main-contact">											
-                                                <div class="contact-number">
-                                                    <a href="tel:62-021-2457-5555">021 2457 5555</a><br>
-                                                    <a href="tel:62-021-461-8000">021 461 8000</a>
-                                                </div>
-                                                <div class="right-bottom">
-													<a href="tel:62-8111080090">
-													 08111080090
-													</a>
-													<br>
-													<a href="tel:62-021-461-6995">
-													0214616995
-													</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <a href="#" class="bottom-email">contact_center@yamaha-motor.co.id</a>
-                                </div>
-                            </section>
-                        </div>
-                </div>
-            </div>
-		</div>
-	</footer>
-	
 	</body>
 </html>
